@@ -1,4 +1,4 @@
-mixanddrink
+MixAndDrink
 ===========
 
-Questa Ë la parte del software che concerne l'fpga.
+Questa è la parte del software che concerne l'fpga.
