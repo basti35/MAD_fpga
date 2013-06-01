@@ -1,0 +1,42 @@
+
+State Machine - |lcd_modes_test|LCD:inst4|next_state
+Name next_state.DISPLAY_CLEAR_WRITING next_state.DISPLAY_ON_WRITING next_state.DISPLAY_OFF_BLINK next_state.LINE2 next_state.RETURN_HOME next_state.PRINT_STRING_ROTATE next_state.PRINT_STRING_BLINK next_state.PRINT_STRING_SOLID next_state.MODE_SET next_state.DISPLAY_ON next_state.DISPLAY_CLEAR next_state.DISPLAY_OFF next_state.FUNC_SET next_state.WAIT_BF next_state.DELAY next_state.INIT3 next_state.INIT1 next_state.INIT2 
+next_state.INIT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+next_state.INIT1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+next_state.INIT3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+next_state.DELAY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+next_state.WAIT_BF 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+next_state.FUNC_SET 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+next_state.DISPLAY_OFF 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+next_state.DISPLAY_CLEAR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+next_state.DISPLAY_ON 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+next_state.MODE_SET 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+next_state.PRINT_STRING_SOLID 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+next_state.PRINT_STRING_BLINK 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+next_state.PRINT_STRING_ROTATE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+next_state.RETURN_HOME 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+next_state.LINE2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+next_state.DISPLAY_OFF_BLINK 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+next_state.DISPLAY_ON_WRITING 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+next_state.DISPLAY_CLEAR_WRITING 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lcd_modes_test|LCD:inst4|lcd_fsm
+Name lcd_fsm.DISPLAY_CLEAR_WRITING lcd_fsm.DISPLAY_ON_WRITING lcd_fsm.DISPLAY_OFF_BLINK lcd_fsm.LINE2 lcd_fsm.RETURN_HOME lcd_fsm.PRINT_STRING_ROTATE lcd_fsm.PRINT_STRING_BLINK lcd_fsm.PRINT_STRING_SOLID lcd_fsm.MODE_SET lcd_fsm.DISPLAY_ON lcd_fsm.DISPLAY_CLEAR lcd_fsm.DISPLAY_OFF lcd_fsm.FUNC_SET lcd_fsm.WAIT_BF lcd_fsm.DELAY lcd_fsm.INIT3 lcd_fsm.INIT2 lcd_fsm.INIT1 
+lcd_fsm.INIT1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+lcd_fsm.INIT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+lcd_fsm.INIT3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+lcd_fsm.DELAY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+lcd_fsm.WAIT_BF 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+lcd_fsm.FUNC_SET 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+lcd_fsm.DISPLAY_OFF 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_CLEAR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_ON 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+lcd_fsm.MODE_SET 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+lcd_fsm.PRINT_STRING_SOLID 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.PRINT_STRING_BLINK 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.PRINT_STRING_ROTATE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.RETURN_HOME 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.LINE2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_OFF_BLINK 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_ON_WRITING 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_CLEAR_WRITING 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

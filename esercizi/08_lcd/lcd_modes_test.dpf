@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="HSMC_TX_D_P[12]" source="Assignments" diff_pair_node="HSMC_TX_D_N[12]" >
+		</pin>
+		<pin name="HSMC_TX_D_N[12]" source="Assignments" diff_pair_node="HSMC_TX_D_P[12]" >
+		</pin>
+		<pin name="HSMC_RX_D_P[12]" source="Assignments" diff_pair_node="HSMC_RX_D_N[12]" >
+		</pin>
+		<pin name="HSMC_RX_D_N[12]" source="Assignments" diff_pair_node="HSMC_RX_D_P[12]" >
+		</pin>
+		<pin name="HSMC_TX_D_P[13]" source="Assignments" diff_pair_node="HSMC_TX_D_N[13]" >
+		</pin>
+		<pin name="HSMC_TX_D_N[13]" source="Assignments" diff_pair_node="HSMC_TX_D_P[13]" >
+		</pin>
+		<pin name="HSMC_RX_D_P[13]" source="Assignments" diff_pair_node="HSMC_RX_D_N[13]" >
+		</pin>
+		<pin name="HSMC_RX_D_N[13]" source="Assignments" diff_pair_node="HSMC_RX_D_P[13]" >
+		</pin>
+		<pin name="HSMC_TX_D_P[14]" source="Assignments" diff_pair_node="HSMC_TX_D_N[14]" >
+		</pin>
+		<pin name="HSMC_TX_D_N[14]" source="Assignments" diff_pair_node="HSMC_TX_D_P[14]" >
+		</pin>
+		<pin name="HSMC_RX_D_P[14]" source="Assignments" diff_pair_node="HSMC_RX_D_N[14]" >
+		</pin>
+		<pin name="HSMC_RX_D_N[14]" source="Assignments" diff_pair_node="HSMC_RX_D_P[14]" >
+		</pin>
+		<pin name="HSMC_TX_D_P[15]" source="Assignments" diff_pair_node="HSMC_TX_D_N[15]" >
+		</pin>
+		<pin name="HSMC_TX_D_N[15]" source="Assignments" diff_pair_node="HSMC_TX_D_P[15]" >
+		</pin>
+		<pin name="HSMC_RX_D_P[15]" source="Assignments" diff_pair_node="HSMC_RX_D_N[15]" >
+		</pin>
+		<pin name="HSMC_RX_D_N[15]" source="Assignments" diff_pair_node="HSMC_RX_D_P[15]" >
+		</pin>
+		<pin name="HSMC_TX_D_P[16]" source="Assignments" diff_pair_node="HSMC_TX_D_N[16]" >
+		</pin>
+		<pin name="HSMC_TX_D_N[16]" source="Assignments" diff_pair_node="HSMC_TX_D_P[16]" >
+		</pin>
+		<pin name="HSMC_RX_D_P[16]" source="Assignments" diff_pair_node="HSMC_RX_D_N[16]" >
+		</pin>
+		<pin name="HSMC_RX_D_N[16]" source="Assignments" diff_pair_node="HSMC_RX_D_P[16]" >
+		</pin>
+		<pin name="HSMC_CLKOUT_P2" source="Assignments" diff_pair_node="HSMC_CLKOUT_N2" >
+		</pin>
+		<pin name="HSMC_CLKOUT_N2" source="Assignments" diff_pair_node="HSMC_CLKOUT_P2" >
+		</pin>
+		<pin name="HSMC_CLKOUT_P1" source="Assignments" diff_pair_node="HSMC_CLKOUT_N1" >
+		</pin>
+		<pin name="HSMC_CLKOUT_N1" source="Assignments" diff_pair_node="HSMC_CLKOUT_P1" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

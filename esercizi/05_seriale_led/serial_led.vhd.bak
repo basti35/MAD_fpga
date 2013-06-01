@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity serial_led is
+	port (
+		--input
+			CLOCK_50	: in  std_logic;
+			UART_RXD	: in  std_logic;
+		--output
+			UART_TXD	: out std_logic;
+			LEDR		: out std_logic_vector (17 downto 0)
+	);
+end entity;
+
+architecture main of serial_led
+
+		rx_data	: in  std_logic_vector (7 downto 0);
+	--output
+	  	led		: out std_logic_vector (7 downto 0)
+	--variable
+
+
+	process(clk)
+	begin
+		if(rx = '1') then
+			led <= rx_data;
+			tx  <= 'O';
+		end if;
+	end process
+	
+end architecture
+

@@ -1,0 +1,38 @@
+-- attivando l'enable carica i dati dagli switches sui led
+-- disattivando l'enable comincia a ruotare i led verso dx
+-- il sistema è sincrono
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity copy is
+	port 
+	(
+		-- input
+		sources	: in std_logic_vector (17 downto 0);
+		enable	: in std_logic;
+		ck	: in std_logic;		
+		-- output
+		dest		: out std_logic_vector (17 downto 0)
+	);
+	
+end entity;
+
+architecture main of copy is
+	signal mem std_logic_vector (17 downto 0);
+	
+begin
+
+	process (ck)
+	begin
+	   if (ck'event and ck='1') then
+			-- reset leds if enable is low
+			mem (17 downto 1) <= mem (16 downto 0);
+			mem(0) <= mem(17);
+			if (enable='1') then
+				-- Read keys and copy to leds
+				mem(17 downto 0) <= sources(17 downto 0);
+			end if;
+		end if;			
+	end process;
+end main;

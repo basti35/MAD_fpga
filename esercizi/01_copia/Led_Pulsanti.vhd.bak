@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity copy_keys_leds is
+	port 
+	(
+		-- input
+		keys		: in std_logic_vector (17 downto 0);
+		enable	: in std_logic;
+		-- output
+		leds	: out std_logic_vector (17 downto 0)
+	);
+	
+end entity;
+
+architecture main of copy_keys_leds is
+
+	-- Build an array type for the shift register
+	type sr_length is array (63 downto 0) of std_logic;
+	
+	-- Declare the shift register signal
+	signal sr: sr_length;
+
+begin
+
+	process (enable, sr_in)
+	begin
+		leds <= (others <= '0');
+		if (enable = '1') then
+			
+			-- Shift data by one stage; data from last stage is lost
+			leds(17 downto 0) <= keys(17 downto 0);
+		end if;
+	end process;
+	
+	-- Capture the data from the last stage, before it is lost
+	sr_out <= sr(63);
+	
+end main;

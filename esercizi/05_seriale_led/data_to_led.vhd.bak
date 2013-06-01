@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity data_to_led is
+	port (
+	--input
+		clk		: in  std_logic;
+		rx			: in  std_logic;
+		rx_data	: in  std_logic_vector (7 downto 0);
+	--output
+	  	led		: out std_logic_vector (7 downto 0)
+	--variable
+	
+	);
+end entity;
+
+architecture main of data_to_led
+
+	process(clk)
+	begin
+		if(rx = '1') then
+			led <= rx_data;
+		end if;
+	end process
+	
+end architecture
+
