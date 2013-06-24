@@ -1,0 +1,72 @@
+
+State Machine - |MADs|uart:uart1|rx_fsm
+Name rx_fsm.stop3 rx_fsm.stop2 rx_fsm.stop1 rx_fsm.parity rx_fsm.data rx_fsm.ck_start_bit rx_fsm.idle 
+rx_fsm.idle 0 0 0 0 0 0 0 
+rx_fsm.ck_start_bit 0 0 0 0 0 1 1 
+rx_fsm.data 0 0 0 0 1 0 1 
+rx_fsm.parity 0 0 0 1 0 0 1 
+rx_fsm.stop1 0 0 1 0 0 0 1 
+rx_fsm.stop2 0 1 0 0 0 0 1 
+rx_fsm.stop3 1 0 0 0 0 0 1 
+
+State Machine - |MADs|uart:uart1|tx_fsm
+Name tx_fsm.stop3 tx_fsm.stop2 tx_fsm.stop1 tx_fsm.parity tx_fsm.data tx_fsm.ck_start_bit tx_fsm.idle 
+tx_fsm.idle 0 0 0 0 0 0 0 
+tx_fsm.ck_start_bit 0 0 0 0 0 1 1 
+tx_fsm.data 0 0 0 0 1 0 1 
+tx_fsm.parity 0 0 0 1 0 0 1 
+tx_fsm.stop1 0 0 1 0 0 0 1 
+tx_fsm.stop2 0 1 0 0 0 0 1 
+tx_fsm.stop3 1 0 0 0 0 0 1 
+
+State Machine - |MADs|FSM:inst2|next_state
+Name next_state.TAKE_GLASS next_state.EROGATION next_state.IDLE next_state.CHECK_GLASS next_state.START next_state.DELAY next_state.CHECK_LEVELS 
+next_state.CHECK_LEVELS 0 0 0 0 0 0 0 
+next_state.DELAY 0 0 0 0 0 1 1 
+next_state.START 0 0 0 0 1 0 1 
+next_state.CHECK_GLASS 0 0 0 1 0 0 1 
+next_state.IDLE 0 0 1 0 0 0 1 
+next_state.EROGATION 0 1 0 0 0 0 1 
+next_state.TAKE_GLASS 1 0 0 0 0 0 1 
+
+State Machine - |MADs|FSM:inst2|present_state
+Name present_state.TAKE_GLASS present_state.EROGATION present_state.IDLE present_state.CHECK_GLASS present_state.CHECK_LEVELS present_state.DELAY present_state.START 
+present_state.START 0 0 0 0 0 0 0 
+present_state.DELAY 0 0 0 0 0 1 1 
+present_state.CHECK_LEVELS 0 0 0 0 1 0 1 
+present_state.CHECK_GLASS 0 0 0 1 0 0 1 
+present_state.IDLE 0 0 1 0 0 0 1 
+present_state.EROGATION 0 1 0 0 0 0 1 
+present_state.TAKE_GLASS 1 0 0 0 0 0 1 
+
+State Machine - |MADs|LCD:inst12|next_state
+Name next_state.LINE2 next_state.RETURN_HOME next_state.PRINT_STRING_SOLID next_state.MODE_SET next_state.DISPLAY_ON next_state.DISPLAY_CLEAR next_state.DISPLAY_OFF next_state.FUNC_SET next_state.WAIT_BF next_state.DELAY next_state.INIT3 next_state.INIT1 next_state.INIT2 
+next_state.INIT2 0 0 0 0 0 0 0 0 0 0 0 0 0 
+next_state.INIT1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+next_state.INIT3 0 0 0 0 0 0 0 0 0 0 1 0 1 
+next_state.DELAY 0 0 0 0 0 0 0 0 0 1 0 0 1 
+next_state.WAIT_BF 0 0 0 0 0 0 0 0 1 0 0 0 1 
+next_state.FUNC_SET 0 0 0 0 0 0 0 1 0 0 0 0 1 
+next_state.DISPLAY_OFF 0 0 0 0 0 0 1 0 0 0 0 0 1 
+next_state.DISPLAY_CLEAR 0 0 0 0 0 1 0 0 0 0 0 0 1 
+next_state.DISPLAY_ON 0 0 0 0 1 0 0 0 0 0 0 0 1 
+next_state.MODE_SET 0 0 0 1 0 0 0 0 0 0 0 0 1 
+next_state.PRINT_STRING_SOLID 0 0 1 0 0 0 0 0 0 0 0 0 1 
+next_state.RETURN_HOME 0 1 0 0 0 0 0 0 0 0 0 0 1 
+next_state.LINE2 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |MADs|LCD:inst12|lcd_fsm
+Name lcd_fsm.LINE2 lcd_fsm.RETURN_HOME lcd_fsm.PRINT_STRING_SOLID lcd_fsm.MODE_SET lcd_fsm.DISPLAY_ON lcd_fsm.DISPLAY_CLEAR lcd_fsm.DISPLAY_OFF lcd_fsm.FUNC_SET lcd_fsm.WAIT_BF lcd_fsm.DELAY lcd_fsm.INIT3 lcd_fsm.INIT2 lcd_fsm.INIT1 
+lcd_fsm.INIT1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+lcd_fsm.INIT2 0 0 0 0 0 0 0 0 0 0 0 1 1 
+lcd_fsm.INIT3 0 0 0 0 0 0 0 0 0 0 1 0 1 
+lcd_fsm.DELAY 0 0 0 0 0 0 0 0 0 1 0 0 1 
+lcd_fsm.WAIT_BF 0 0 0 0 0 0 0 0 1 0 0 0 1 
+lcd_fsm.FUNC_SET 0 0 0 0 0 0 0 1 0 0 0 0 1 
+lcd_fsm.DISPLAY_OFF 0 0 0 0 0 0 1 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_CLEAR 0 0 0 0 0 1 0 0 0 0 0 0 1 
+lcd_fsm.DISPLAY_ON 0 0 0 0 1 0 0 0 0 0 0 0 1 
+lcd_fsm.MODE_SET 0 0 0 1 0 0 0 0 0 0 0 0 1 
+lcd_fsm.PRINT_STRING_SOLID 0 0 1 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.RETURN_HOME 0 1 0 0 0 0 0 0 0 0 0 0 1 
+lcd_fsm.LINE2 1 0 0 0 0 0 0 0 0 0 0 0 1 

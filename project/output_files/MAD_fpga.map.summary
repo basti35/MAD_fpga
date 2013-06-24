@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 24 16:44:57 2013
+Quartus II 32-bit Version : 12.1 Build 243 01/31/2013 SP 1 SJ Web Edition
+Revision Name : MAD_fpga
+Top-level Entity Name : MADs
+Family : Cyclone IV E
+Total logic elements : 697
+    Total combinational functions : 677
+    Dedicated logic registers : 207
+Total registers : 207
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
